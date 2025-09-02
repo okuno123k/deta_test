@@ -4,21 +4,21 @@
     "name": "AviUtlExEdit2",
     "type": "本体",
     "summary": "AviUtl2本体",
-    "description": "AviUtl2 本体。高速かつ拡張性の高い動画編集ソフトウェア。",
+    "description": "AviUtl2 本体。基本機能の提供を行います。",
     "author": "Kenkun",
-    "latest-version": "beta8",
-    "repoURL": "https://example.com/repo1",
-    "downloadURL": "https://example.com/file1.exe",
+    "latest-version": "beta9",
+    "repoURL": "https://spring-fragrance.mints.ne.jp/aviutl/",
+    "downloadURL": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe",
     "license": "MIT",
     "tags": ["UI"],
     "dependencies": [],
-    "installation": "アーカイブを解凍し、フォルダに配置してください。",
+    "installation": "アーカイブを解凍し、フォルダへ配置してください。",
     "images": [
       { "src": "https://picsum.photos/seed/a/800/400", "alt": "screenshot1" }
     ],
     "version": [
       {
-        "version": "beta8",
+        "version": "beta9",
         "release_date": "2025-08-24",
         "file": [
           { "path": "C:/Program Files/AviUtl2/aviutl2.exe", "blake3": "..." }
@@ -29,22 +29,29 @@
         "release_date": "2025-07-01",
         "file": []
       }
-    ]
+    ],
+    "installer": {
+      "source": { "direct": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe" },
+      "install": [
+        { "action": "download" },
+        { "action": "run", "path": "{download}" }
+      ]
+    }
   },
   {
     "id": "Someone.InputPluginX",
     "name": "Input Plugin X",
     "type": "入力",
-    "summary": "さまざまな形式の入力をサポート",
+    "summary": "各種フォーマットの入力をサポート",
     "description": "MP4, MKV などの入力をサポートするプラグイン。",
     "author": "Someone",
     "latest-version": "1.2.0",
     "repoURL": "https://example.com/repo2",
     "downloadURL": "https://example.com/inputx.zip",
     "license": "Apache-2.0",
-    "tags": ["入力", "コーデック"],
+    "tags": ["映像", "コーデック"],
     "dependencies": ["AviUtlExEdit2"],
-    "installation": "plugins/input に配置してください。",
+    "installation": "plugins/input へ配置してください。",
     "images": [
       { "src": "https://picsum.photos/seed/b/800/400", "alt": "screenshot2" },
       { "src": "https://picsum.photos/seed/c/800/400", "alt": "screenshot3" }
@@ -55,14 +62,26 @@
         "release_date": "2024-12-15",
         "file": []
       }
-    ]
+    ],
+    "installer": {
+      "source": { "direct": "https://example.com/inputx.zip" },
+      "install": [
+        { "action": "download", "to": "{tmp}/pkg.zip" },
+        { "action": "extract", "from": "{tmp}/pkg.zip", "to": "{tmp}/pkg" },
+        { "action": "ensureDirs", "paths": ["{pluginsDir}"] },
+        { "action": "copy", "from": "{tmp}/pkg/*.auf", "to": "{pluginsDir}" }
+      ],
+      "uninstall": [
+        { "action": "delete", "path": "{pluginsDir}/plugin.auf" }
+      ]
+    }
   },
   {
     "id": "Script.Author.EffectY",
     "name": "Effect Script Y",
     "type": "スクリプト",
-    "summary": "多彩なエフェクトを提供",
-    "description": "描画エフェクト用スクリプト集。",
+    "summary": "多彩なエフェクト群",
+    "description": "簡単なエフェクト用スクリプト集。",
     "author": "ScriptAuthor",
     "latest-version": "0.9.1",
     "repoURL": "https://example.com/repo3",
@@ -70,7 +89,7 @@
     "license": "GPL-3.0",
     "tags": ["描画", "UI"],
     "dependencies": [],
-    "installation": "script に配置して再起動。",
+    "installation": "script に配置して再起動してください。",
     "images": [],
     "version": [
       {
@@ -79,6 +98,43 @@
         "file": []
       }
     ]
+  },
+  {
+    "id": "hebiiro.al2_jd",
+    "name": "AviUtl2 ダークモード化プラグイン",
+    "type": "入力プラグイン",
+    "summary": "aviutl2を完全にダークモード化することを目的としたMODです。",
+    "description": "AviUtl2のUIをダークモードに変更するプラグインです。",
+    "author": "hebiiro",
+    "latest-version": "r15",
+    "repoURL": "https://github.com/hebiiro/al2_jd/",
+    "downloadURL": "https://github.com/hebiiro/al2_jd/releases/download/r15/al2_jd_r15.zip",
+    "license": "MIT",
+    "tags": ["UI", "ダークモード化"],
+    "dependencies": ["AviUtlExEdit2"],
+    "installation": "plugins/input へ配置してください。",
+    "images": [
+      { "src": "https://picsum.photos/seed/b/800/400", "alt": "screenshot2" },
+      { "src": "https://picsum.photos/seed/c/800/400", "alt": "screenshot3" }
+    ],
+    "version": [
+      {
+        "version": "1.2.0",
+        "release_date": "2024-12-15",
+        "file": []
+      }
+    ],
+    "installer": {
+      "source": { "direct": "https://github.com/hebiiro/al2_jd/releases/download/r15/al2_jd_r15.zip" },
+      "install": [
+        { "action": "download", "to": "{tmp}/al2_jd_r15.zip" },
+        { "action": "extract", "from": "{tmp}/al2_jd_r15.zip", "to": "{tmp}/pkg" },
+        { "action": "ensureDirs", "paths": ["{pluginsDir}"] },
+        { "action": "copy", "from": "{tmp}/pkg/*.auf", "to": "{pluginsDir}" }
+      ],
+      "uninstall": [
+        { "action": "delete", "path": "{pluginsDir}/plugin.auf" }
+      ]
+    }
   }
 ]
-
