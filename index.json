@@ -139,7 +139,7 @@
   },
   {
     "id": "hebiiro.al2_jd",
-    "name": "AviUtl2 ダークモード化プラグイン",
+    "name": "ダークモード化プラグイン",
     "type": "入力プラグイン",
     "summary": "aviutl2を完全にダークモード化することを目的としたMODです。",
     "description": "AviUtl2のUIをダークモードに変更するプラグインです。",
