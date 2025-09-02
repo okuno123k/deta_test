@@ -8,20 +8,53 @@
     "author": "Kenkun",
     "latest-version": "beta9",
     "repoURL": "https://spring-fragrance.mints.ne.jp/aviutl/",
-    "downloadURL": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe",
     "license": "MIT",
-    "tags": ["UI"],
+    "tags": [
+      "UI"
+    ],
     "dependencies": [],
     "installation": "アーカイブを解凍し、フォルダへ配置してください。",
     "images": [
-      { "src": "https://picsum.photos/seed/a/800/400", "alt": "screenshot1" }
+      {
+        "src": "https://picsum.photos/seed/a/800/400",
+        "alt": "screenshot1"
+      }
     ],
+    "installer": {
+      "source": {
+        "direct": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe"
+      },
+      "install": [
+        {
+          "action": "download"
+        },
+        {
+          "action": "run",
+          "path": "{download}"
+        }
+      ],
+      "uninstall": [
+        {
+          "action": "run",
+          "path": "{appDir}/unins000.exe",
+          "args": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART"
+          ],
+          "elevate": true
+        }
+      ]
+    },
     "version": [
       {
         "version": "beta9",
         "release_date": "2025-08-24",
         "file": [
-          { "path": "C:/Program Files/AviUtl2/aviutl2.exe", "blake3": "..." }
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "blake3": "..."
+          }
         ]
       },
       {
@@ -29,14 +62,7 @@
         "release_date": "2025-07-01",
         "file": []
       }
-    ],
-    "installer": {
-      "source": { "direct": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe" },
-      "install": [
-        { "action": "download" },
-        { "action": "run", "path": "{download}" }
-      ]
-    }
+    ]
   },
   {
     "id": "Someone.InputPluginX",
@@ -49,12 +75,23 @@
     "repoURL": "https://example.com/repo2",
     "downloadURL": "https://example.com/inputx.zip",
     "license": "Apache-2.0",
-    "tags": ["映像", "コーデック"],
-    "dependencies": ["AviUtlExEdit2"],
+    "tags": [
+      "映像",
+      "コーデック"
+    ],
+    "dependencies": [
+      "AviUtlExEdit2"
+    ],
     "installation": "plugins/input へ配置してください。",
     "images": [
-      { "src": "https://picsum.photos/seed/b/800/400", "alt": "screenshot2" },
-      { "src": "https://picsum.photos/seed/c/800/400", "alt": "screenshot3" }
+      {
+        "src": "https://picsum.photos/seed/b/800/400",
+        "alt": "screenshot2"
+      },
+      {
+        "src": "https://picsum.photos/seed/c/800/400",
+        "alt": "screenshot3"
+      }
     ],
     "version": [
       {
@@ -64,15 +101,36 @@
       }
     ],
     "installer": {
-      "source": { "direct": "https://example.com/inputx.zip" },
+      "source": {
+        "direct": "https://example.com/inputx.zip"
+      },
       "install": [
-        { "action": "download", "to": "{tmp}/pkg.zip" },
-        { "action": "extract", "from": "{tmp}/pkg.zip", "to": "{tmp}/pkg" },
-        { "action": "ensureDirs", "paths": ["{pluginsDir}"] },
-        { "action": "copy", "from": "{tmp}/pkg/*.auf", "to": "{pluginsDir}" }
+        {
+          "action": "download",
+          "to": "{tmp}/pkg.zip"
+        },
+        {
+          "action": "extract",
+          "from": "{tmp}/pkg.zip",
+          "to": "{tmp}/pkg"
+        },
+        {
+          "action": "ensureDirs",
+          "paths": [
+            "{pluginsDir}"
+          ]
+        },
+        {
+          "action": "copy",
+          "from": "{tmp}/pkg/*.auf",
+          "to": "{pluginsDir}"
+        }
       ],
       "uninstall": [
-        { "action": "delete", "path": "{pluginsDir}/plugin.auf" }
+        {
+          "action": "delete",
+          "path": "{pluginsDir}/plugin.auf"
+        }
       ]
     }
   },
@@ -87,7 +145,10 @@
     "repoURL": "https://example.com/repo3",
     "downloadURL": "https://example.com/effecty.7z",
     "license": "GPL-3.0",
-    "tags": ["描画", "UI"],
+    "tags": [
+      "描画",
+      "UI"
+    ],
     "dependencies": [],
     "installation": "script に配置して再起動してください。",
     "images": [],
@@ -108,33 +169,61 @@
     "author": "hebiiro",
     "latest-version": "r15",
     "repoURL": "https://github.com/hebiiro/al2_jd/",
-    "downloadURL": "https://github.com/hebiiro/al2_jd/releases/download/r15/al2_jd_r15.zip",
     "license": "MIT",
-    "tags": ["UI", "ダークモード化"],
-    "dependencies": ["AviUtlExEdit2"],
+    "tags": [
+      "UI",
+      "ダークモード化"
+    ],
+    "dependencies": [
+      "AviUtlExEdit2"
+    ],
     "installation": "plugins/input へ配置してください。",
     "images": [
-      { "src": "https://picsum.photos/seed/b/800/400", "alt": "screenshot2" },
-      { "src": "https://picsum.photos/seed/c/800/400", "alt": "screenshot3" }
+      {
+        "src": "https://picsum.photos/seed/b/800/400",
+        "alt": "screenshot2"
+      },
+      {
+        "src": "https://picsum.photos/seed/c/800/400",
+        "alt": "screenshot3"
+      }
     ],
+    "installer": {
+      "source": {
+        "github": {
+          "owner": "hebiiro",
+          "repo": "al2_jd",
+          "pattern": "^al2_jd_r\\d+\\.zip$"
+        }
+      },
+      "install": [
+        {
+          "action": "download"
+        },
+        {
+          "action": "extract",
+          "from": "{download}",
+          "to": "{tmp}/pkg"
+        },
+        {
+          "action": "ensureDirs",
+          "paths": [
+            "{pluginsDir}"
+          ]
+        },
+        {
+          "action": "copy",
+          "from": "{tmp}/pkg/*.auf",
+          "to": "{pluginsDir}"
+        }
+      ]
+    },
     "version": [
       {
         "version": "1.2.0",
         "release_date": "2024-12-15",
         "file": []
       }
-    ],
-    "installer": {
-      "source": { "direct": "https://github.com/hebiiro/al2_jd/releases/download/r15/al2_jd_r15.zip" },
-      "install": [
-        { "action": "download", "to": "{tmp}/al2_jd_r15.zip" },
-        { "action": "extract", "from": "{tmp}/al2_jd_r15.zip", "to": "{tmp}/pkg" },
-        { "action": "ensureDirs", "paths": ["{pluginsDir}"] },
-        { "action": "copy", "from": "{tmp}/pkg/*.auf", "to": "{pluginsDir}" }
-      ],
-      "uninstall": [
-        { "action": "delete", "path": "{pluginsDir}/plugin.auf" }
-      ]
-    }
+    ]
   }
 ]
