@@ -179,7 +179,7 @@
         },
         {
           "action": "copy",
-          "from": "{tmp}/**/Plugin/*",
+          "from": "{tmp}/Plugin/*",
           "to": "{pluginsDir}"
         }
       ]
