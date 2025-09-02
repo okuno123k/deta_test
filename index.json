@@ -194,7 +194,7 @@
         },
         {
           "action": "delete",
-          "path": "{pluginsDir}/al2/*"
+          "path": "{pluginsDir}/al2/"
         }
       ]
     },
