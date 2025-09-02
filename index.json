@@ -407,7 +407,7 @@
           "release_date": "2025-07-11",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "e40ba36679c58b1534c7e384fb9c082e"
             }
           ]
@@ -417,7 +417,7 @@
           "release_date": "2025-07-13",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "289669d6fdd3a18f37ffaa93d29aca34"
             }
           ]
@@ -427,7 +427,7 @@
           "release_date": "2025-07-13",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "b346184e9cb385599a190880943c90a6"
             }
           ]
@@ -437,7 +437,7 @@
           "release_date": "2025-07-13",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "1feb161c609b36ccd4781d852410721c"
             }
           ]
@@ -447,7 +447,7 @@
           "release_date": "2025-07-20",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "6f9089cc74b978f6bac909711b41a06d"
             }
           ]
@@ -457,7 +457,7 @@
           "release_date": "2025-07-21",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "eb7192f6930165ad7338a223b46d2709"
             }
           ]
@@ -467,7 +467,7 @@
           "release_date": "2025-07-21",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "2ced86be3f0813784a086ed19b0601c2"
             }
           ]
@@ -477,7 +477,7 @@
           "release_date": "2025-07-22",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "b23732b4a6b6f776f6d59542ce19ecfe"
             }
           ]
@@ -487,7 +487,7 @@
           "release_date": "2025-07-24",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "94dd816e397d9898e352ab295206005d"
             }
           ]
@@ -497,7 +497,7 @@
           "release_date": "2025-07-25",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "d9c4e98170dca5b2b11b13ffc7c287e0"
             }
           ]
@@ -507,7 +507,7 @@
           "release_date": "2025-07-27",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "0c65c633a772ee831690103ed8a0a6bb"
             }
           ]
@@ -517,7 +517,7 @@
           "release_date": "2025-08-03",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "c7e90457861da1a0da909aa02919deda"
             }
           ]
@@ -527,7 +527,7 @@
           "release_date": "2025-08-10",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "c00c1c72dc6a02be103702afd83c46ec"
             }
           ]
@@ -537,7 +537,7 @@
           "release_date": "2025-08-17",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "9284e94f8f3c8482e81fb1171ffab666"
             }
           ]
@@ -547,7 +547,7 @@
           "release_date": "2025-08-23",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "6d810ed052caa4ac698f5552bba70d25"
             }
           ]
@@ -557,7 +557,7 @@
           "release_date": "2025-08-23",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "d5abdaaea0320cf3756ea8b6e68115ce"
             }
           ]
@@ -567,7 +567,7 @@
           "release_date": "2025-08-24",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "b7d3fa38d5a7a371061fb3cd18deca45"
             }
           ]
@@ -577,7 +577,7 @@
           "release_date": "2025-09-01",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "b2163d0b4fb7831dd33eec122d9a127c"
             }
           ]
@@ -587,7 +587,7 @@
           "release_date": "2025-09-02",
           "file": [
             {
-              "path": "{pluginsDir}\\lwinput.aui2",
+              "path": "{pluginsDir}/lwinput.aui2",
               "XXH3_128": "5e11d5b2d7d2e0e73282ee2341c05268"
             }
           ]
