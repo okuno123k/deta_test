@@ -50,7 +50,7 @@
         "release_date": "2025-07-07",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path": "{appDir}/aviutl2.exe",
             "XXH3_128": "d782bc8f7a55a6d0ad2203e64b75fda1"
           }
         ]
@@ -60,7 +60,7 @@
         "release_date": "2025-07-12",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path": "{appDir}/aviutl2.exe",
             "XXH3_128": "bd8122e9d6555b059aa5a61d1f2c13d9"
           }
         ]
@@ -70,7 +70,7 @@
         "release_date": "2025-07-20",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path":"{appDir}/aviutl2.exe",
             "XXH3_128": "41c8ca5d2447ba225e601bf143c84712"
           }
         ]
@@ -80,7 +80,7 @@
         "release_date": "2025-07-27",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path": "{appDir}/aviutl2.exe",
             "XXH3_128": "5ccac2966b5d392a54cef3e411b0d392"
           }
         ]
@@ -90,7 +90,7 @@
         "release_date": "2025-08-03",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path":"{appDir}/aviutl2.exe",
             "XXH3_128": "c69cd0e480a997795aa873c870b88afc"
           }
         ]
@@ -100,7 +100,7 @@
         "release_date": "2025-08-10",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path": "{appDir}/aviutl2.exe",
             "XXH3_128": "56684747d51b856d6ce1556b006bf3dd"
           }
         ]
@@ -110,7 +110,7 @@
         "release_date": "2025-08-16",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path": "{appDir}/aviutl2.exe",
             "XXH3_128": "8e5f3680ab8145b000e6c409014f8abe"
           }
         ]
@@ -120,7 +120,7 @@
         "release_date": "2025-08-24",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path":"{appDir}/aviutl2.exe",
             "XXH3_128": "ba3a600fcb5d8f5a2b0eb036398e1834"
           }
         ]
@@ -130,7 +130,7 @@
         "release_date": "2025-08-30",
         "file": [
           {
-            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "path":"{appDir}/aviutl2.exe",
             "XXH3_128": "5c152484335a18b4fb1fa1eec6d9ea86"
           }
         ]
@@ -144,16 +144,13 @@
     "summary": "aviutl2を完全にダークモード化することを目的としたMODです。",
     "description": "AviUtl2のUIをダークモードに変更するプラグインです。",
     "author": "hebiiro",
-    "latest-version": "r15",
     "repoURL": "https://github.com/hebiiro/al2_jd/",
     "license": "MIT",
     "tags": [
       "UI",
       "ダークモード化"
     ],
-    "dependencies": [
-      "AviUtlExEdit2"
-    ],
+    "dependencies": [],
     "images": [
       {
         "src": "https://picsum.photos/seed/b/800/400",
@@ -178,27 +175,37 @@
         },
         {
           "action": "extract",
-          "from": "{download}",
-          "to": "{tmp}/pkg"
-        },
-        {
-          "action": "ensureDirs",
-          "paths": [
-            "{pluginsDir}"
-          ]
+          "to": "{tmp}"
         },
         {
           "action": "copy",
-          "from": "{tmp}/pkg/*.auf",
+          "from": "{tmp}/Plugin/*",
           "to": "{pluginsDir}"
         }
       ]
     },
     "version": [
       {
-        "version": "1.2.0",
+        "version": "r15",
         "release_date": "2024-12-15",
-        "file": []
+        "file": [
+          {
+            "path": "{pluginsDir}/al2_jd.aui2",
+            "XXH3_128": "3ed0139466167d739edd2cbb142400ab"
+          },
+                    {
+            "path": "{pluginsDir}/DarkenWindow.aul",
+            "XXH3_128": "ea82a94d81be7109cdd511e9682db9c0"
+          },
+                    {
+            "path": "{pluginsDir}/al2/assets/al2_jd.json",
+            "XXH3_128": "b6296291dd60f13979426d89d96015f7"
+          },
+                    {
+            "path": "{pluginsDir}/al2_jd.aui2",
+            "XXH3_128": "3ed0139466167d739edd2cbb142400ab"
+          },
+        ]
       }
     ]
   }
