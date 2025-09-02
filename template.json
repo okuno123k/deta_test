@@ -1,0 +1,58 @@
+{
+    "id": "",
+    "name": "",
+    "type": "",
+    "summary": "",
+    "description": "",
+    "author": "",
+    "repoURL": "",
+    "license": "",
+    "tags": [
+        ""
+    ],
+    "dependencies": [],
+    "images": [
+        {
+            "src": "https://picsum.photos/seed/a/800/400",
+            "alt": "screenshot1"
+        }
+    ],
+    "installer": {
+        "source": {
+            "direct": ""
+        },
+        "install": [
+            {
+                "action": "download"
+            },
+            {
+                "action": "run",
+                "path": "{download}"
+            }
+        ],
+        "uninstall": [
+            {
+                "action": "run",
+                "path": "{appDir}/unins000.exe",
+                "args": [
+                    "/VERYSILENT",
+                    "/SUPPRESSMSGBOXES",
+                    "/NORESTART"
+                ],
+                "elevate": true
+            }
+        ]
+    },
+    "version": [
+        {
+            "version": "",
+            "release_date": "",
+            "file": [
+                {
+                    "path": "",
+                    "blake3": ""
+                }
+            ]
+        }
+    ]
+}

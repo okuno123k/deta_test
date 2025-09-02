@@ -3,17 +3,15 @@
     "id": "Kenkun.AviUtlExEdit2",
     "name": "AviUtlExEdit2",
     "type": "本体",
-    "summary": "AviUtl2本体",
-    "description": "AviUtl2 本体。基本機能の提供を行います。",
+    "summary": "AviUtl2本体です。",
+    "description": "AVIファイルに各種フィルタをかけるツールです。簡単な動画編集や各種codecを使って圧縮しながら出力することも出来ます。WinXP、Win7等で動作すると思います。MMXが使えるCPUが必要です。",
     "author": "Kenkun",
-    "latest-version": "beta9",
     "repoURL": "https://spring-fragrance.mints.ne.jp/aviutl/",
     "license": "MIT",
     "tags": [
       "UI"
     ],
     "dependencies": [],
-    "installation": "アーカイブを解凍し、フォルダへ配置してください。",
     "images": [
       {
         "src": "https://picsum.photos/seed/a/800/400",
@@ -48,115 +46,94 @@
     },
     "version": [
       {
-        "version": "beta9",
-        "release_date": "2025-08-24",
+        "version": "beta1",
+        "release_date": "2025-07-07",
         "file": [
           {
             "path": "C:/Program Files/AviUtl2/aviutl2.exe",
-            "blake3": "..."
+            "XXH3_128": "d782bc8f7a55a6d0ad2203e64b75fda1"
           }
         ]
       },
       {
+        "version": "beta2",
+        "release_date": "2025-07-12",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "bd8122e9d6555b059aa5a61d1f2c13d9"
+          }
+        ]
+      },
+            {
+        "version": "beta3",
+        "release_date": "2025-07-20",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "41c8ca5d2447ba225e601bf143c84712"
+          }
+        ]
+      },
+            {
+        "version": "beta4",
+        "release_date": "2025-07-27",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "5ccac2966b5d392a54cef3e411b0d392"
+          }
+        ]
+      },
+            {
+        "version": "beta5",
+        "release_date": "2025-08-03",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "c69cd0e480a997795aa873c870b88afc"
+          }
+        ]
+      },
+            {
+        "version": "beta6",
+        "release_date": "2025-08-10",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "56684747d51b856d6ce1556b006bf3dd"
+          }
+        ]
+      },
+            {
         "version": "beta7",
-        "release_date": "2025-07-01",
-        "file": []
-      }
-    ]
-  },
-  {
-    "id": "Someone.InputPluginX",
-    "name": "Input Plugin X",
-    "type": "入力",
-    "summary": "各種フォーマットの入力をサポート",
-    "description": "MP4, MKV などの入力をサポートするプラグイン。",
-    "author": "Someone",
-    "latest-version": "1.2.0",
-    "repoURL": "https://example.com/repo2",
-    "downloadURL": "https://example.com/inputx.zip",
-    "license": "Apache-2.0",
-    "tags": [
-      "映像",
-      "コーデック"
-    ],
-    "dependencies": [
-      "AviUtlExEdit2"
-    ],
-    "installation": "plugins/input へ配置してください。",
-    "images": [
-      {
-        "src": "https://picsum.photos/seed/b/800/400",
-        "alt": "screenshot2"
+        "release_date": "2025-08-16",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "8e5f3680ab8145b000e6c409014f8abe"
+          }
+        ]
       },
-      {
-        "src": "https://picsum.photos/seed/c/800/400",
-        "alt": "screenshot3"
-      }
-    ],
-    "version": [
-      {
-        "version": "1.2.0",
-        "release_date": "2024-12-15",
-        "file": []
-      }
-    ],
-    "installer": {
-      "source": {
-        "direct": "https://example.com/inputx.zip"
+            {
+        "version": "beta8",
+        "release_date": "2025-08-24",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "ba3a600fcb5d8f5a2b0eb036398e1834"
+          }
+        ]
       },
-      "install": [
-        {
-          "action": "download",
-          "to": "{tmp}/pkg.zip"
-        },
-        {
-          "action": "extract",
-          "from": "{tmp}/pkg.zip",
-          "to": "{tmp}/pkg"
-        },
-        {
-          "action": "ensureDirs",
-          "paths": [
-            "{pluginsDir}"
-          ]
-        },
-        {
-          "action": "copy",
-          "from": "{tmp}/pkg/*.auf",
-          "to": "{pluginsDir}"
-        }
-      ],
-      "uninstall": [
-        {
-          "action": "delete",
-          "path": "{pluginsDir}/plugin.auf"
-        }
-      ]
-    }
-  },
-  {
-    "id": "Script.Author.EffectY",
-    "name": "Effect Script Y",
-    "type": "スクリプト",
-    "summary": "多彩なエフェクト群",
-    "description": "簡単なエフェクト用スクリプト集。",
-    "author": "ScriptAuthor",
-    "latest-version": "0.9.1",
-    "repoURL": "https://example.com/repo3",
-    "downloadURL": "https://example.com/effecty.7z",
-    "license": "GPL-3.0",
-    "tags": [
-      "描画",
-      "UI"
-    ],
-    "dependencies": [],
-    "installation": "script に配置して再起動してください。",
-    "images": [],
-    "version": [
-      {
-        "version": "0.9.1",
-        "release_date": "2023-10-02",
-        "file": []
+            {
+        "version": "beta9",
+        "release_date": "2025-08-30",
+        "file": [
+          {
+            "path": "C:/Program Files/AviUtl2/aviutl2.exe",
+            "XXH3_128": "5c152484335a18b4fb1fa1eec6d9ea86"
+          }
+        ]
       }
     ]
   },
@@ -177,7 +154,6 @@
     "dependencies": [
       "AviUtlExEdit2"
     ],
-    "installation": "plugins/input へ配置してください。",
     "images": [
       {
         "src": "https://picsum.photos/seed/b/800/400",
