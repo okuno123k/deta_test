@@ -182,6 +182,20 @@
           "from": "{tmp}/Plugin/*",
           "to": "{pluginsDir}"
         }
+      ],
+      "uninstall": [
+        {
+          "action": "delete",
+          "path": "{pluginsDir}/al2_jd.aui2"
+        },
+        {
+          "action": "delete",
+          "path": "{pluginsDir}/DarkenWindow.aul"
+        },
+        {
+          "action": "delete",
+          "path": "{pluginsDir}/al2/*"
+        }
       ]
     },
     "version": [
