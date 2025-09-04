@@ -13,10 +13,6 @@
     ],
     "dependencies": [],
     "images": [
-      {
-        "src": "https://picsum.photos/seed/a/800/400",
-        "alt": "screenshot1"
-      }
     ],
     "installer": {
       "source": {
@@ -381,10 +377,6 @@
     ],
     "dependencies": [],
     "images": [
-      {
-        "src": "https://picsum.photos/seed/a/800/400",
-        "alt": "screenshot1"
-      }
     ],
     "installer": {
       "source": {
