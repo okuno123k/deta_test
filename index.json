@@ -7,13 +7,13 @@
     "description": "AVIファイルに各種フィルタをかけるツールです。簡単な動画編集や各種codecを使って圧縮しながら出力することも出来ます。WinXP、Win7等で動作すると思います。MMXが使えるCPUが必要です。",
     "author": "Kenkun",
     "repoURL": "https://spring-fragrance.mints.ne.jp/aviutl/",
+    "latest-version": "beta9",
     "license": "MIT",
     "tags": [
       "UI"
     ],
     "dependencies": [],
-    "images": [
-    ],
+    "images": [],
     "installer": {
       "source": {
         "direct": "https://spring-fragrance.mints.ne.jp/aviutl/AviUtl2beta9_setup.exe"
@@ -141,6 +141,7 @@
     "description": "AviUtl2のUIをダークモードに変更するプラグインです。",
     "author": "hebiiro",
     "repoURL": "https://github.com/hebiiro/al2_jd/",
+    "latest-version": "r15",
     "license": "MIT",
     "tags": [
       "UI",
@@ -371,13 +372,13 @@
     "description": "VFR-maniac氏によるL-SMASH Worksの派生版であり、Mr-Ojii氏が提供する自動ビルド版。AviUtlおよびAviUtl ExEdit2向けに最適化されており、多種多様なメディア形式の入力に対応した入力プラグインです。",
     "author": "Mr-Ojii",
     "repoURL": "https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds",
+    "latest-version": "r1244",
     "license": "MIT",
     "tags": [
       "必須"
     ],
     "dependencies": [],
-    "images": [
-    ],
+    "images": [],
     "installer": {
       "source": {
         "github": {
@@ -391,7 +392,7 @@
           "action": "download"
         },
         {
-          "action": "run",
+          "action": "extract",
           "path": "{download}"
         }
       ],
@@ -596,6 +597,16 @@
           {
             "path": "{pluginsDir}/lwinput.aui2",
             "XXH3_128": "5e11d5b2d7d2e0e73282ee2341c05268"
+          }
+        ]
+      },
+      {
+        "version": "r1244",
+        "release_date": "2025-09-03",
+        "file": [
+          {
+            "path": "{pluginsDir}/lwinput.aui2",
+            "XXH3_128": "acf32e7d0d533ef48bbe48b4871021dd"
           }
         ]
       }
